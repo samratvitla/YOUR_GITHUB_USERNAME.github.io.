@@ -66,3 +66,15 @@ footer {
     margin-top: 13px;
   }
 }
+.product-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;        /* space between items */
+  flex-wrap: wrap;  /* wraps on smaller screens */
+  margin: 20px 0;
+}
+
+.product-row .product-pay {
+  flex: 1 1 250px;  /* allows items to shrink/grow responsively */
+  max-width: 300px;
+}
