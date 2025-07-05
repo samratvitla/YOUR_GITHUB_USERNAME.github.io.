@@ -78,3 +78,20 @@ footer {
   flex: 1 1 250px;  /* allows items to shrink/grow responsively */
   max-width: 300px;
 }
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 32px;
+  color: #DAA520;
+  background: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 200;
+  transition: transform 0.2s;
+}
+
+.cart-icon:hover {
+  transform: scale(1.1);
+}
