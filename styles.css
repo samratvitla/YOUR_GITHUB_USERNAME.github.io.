@@ -207,3 +207,31 @@ footer {
 .nav-home > input:checked + .nav-dropdown {
   display: block;
 }
+/* Hide the checkbox visually, but keep it accessible */
+.nav-home input[type="checkbox"] {
+  display: none;
+}
+
+/* Only show dropdown when checkbox is checked (tap on label) */
+.nav-home input[type="checkbox"]:checked + label + .nav-dropdown {
+  display: block;
+}
+
+/* Style the label to match nav-home button */
+.nav-home label {
+  display: inline-block;
+  padding: 8px 12px;
+  background: #DAA520;
+  color: #fff;
+  border-radius: 4px;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Existing dropdown styles remain the same; ensure dropdown uses display:none by default */
+.nav-dropdown {
+  display: none;
+  position: absolute;
+  top: 40px;
+  /* ... other styling you already have ... */
+}
