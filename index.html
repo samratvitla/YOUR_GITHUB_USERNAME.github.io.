@@ -6,82 +6,141 @@
   <title>Mynaka Honey Shop</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <style>
+    /* Hero background style */
+    .hero {
+      background-image: url('https://images.pexels.com/photos/7084401/pexels-photo-7084401.jpeg'); /* Bees on flower */
+      background-size: cover;
+      background-position: center;
+      padding: 120px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+    }
+
+    .product img {
+      width: 200px;
+      margin: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+
+    .product img:hover {
+      transform: scale(1.05);
+    }
+
+    .products {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .payment, .contact, footer {
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .whatsapp_float, .cart-icon {
+      position: fixed;
+      bottom: 20px;
+      z-index: 100;
+      color: white;
+      font-size: 28px;
+      background-color: #25d366;
+      padding: 12px 15px;
+      border-radius: 50%;
+      text-align: center;
+    }
+
+    .whatsapp_float {
+      left: 20px;
+    }
+
+    .cart-icon {
+      right: 20px;
+      background-color: #ffcc00;
+      color: #000;
+    }
+  </style>
 </head>
 <body>
-  <body>
-  <nav class="main-nav">
-  <div class="nav-home">
-    <input type="checkbox" id="nav-toggle">
-    <label for="nav-toggle">Home ▼</label>
-    <ul class="nav-dropdown">
-      <li><a href="#collections">View Collections</a></li>
-      <li><a href="#shop">Shop All</a></li>
-      <li><a href="#faq">FAQ</a></li>
-      <li><a href="#track">Track Your Order</a></li>
-      <li><a href="#contact">Contact Us</a></li>
-    </ul>
-  </div>
-</nav>
 
-  <!-- Rest of your existing content begins here -->
-  <header> </header>
-</body>
+  <!-- Navigation -->
+  <nav class="main-nav">
+    <div class="nav-home">
+      <input type="checkbox" id="nav-toggle">
+      <label for="nav-toggle">Home ▼</label>
+      <ul class="nav-dropdown">
+        <li><a href="#collections">View Collections</a></li>
+        <li><a href="#shop">Shop All</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#track">Track Your Order</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
   <header class="hero">
     <h1>MYNAKA HONEY</h1>
     <p>Ethically harvested • 250g / 500g / 1000g packs</p>
   </header>
 
-  <section class="products">
+  <!-- Product Section -->
+  <section class="products" id="shop">
     <div class="product">
       <a href="upi://pay?pa=Vitla.samrat@ybl&pn=Mynaka%20Honey&am=199&cu=INR">
-  <img src="images/250g.jpg" alt="250 g honey jar – ₹199">
-</a>
+        <img src="images/250g.jpg" alt="250 g honey jar – ₹199">
+      </a>
       <h2>250g – ₹199</h2>
 
       <a href="upi://pay?pa=Vitla.samrat@ybl&pn=Mynaka%20Honey&am=399&cu=INR">
-  <img src="images/500g.jpg" alt="500 g honey jar – ₹399">
-</a>
+        <img src="images/500g.jpg" alt="500 g honey jar – ₹399">
+      </a>
       <h2>500g – ₹399</h2>
-      
+
       <a href="upi://pay?pa=Vitla.samrat@ybl&pn=Mynaka%20Honey&am=699&cu=INR">
-  <img src="images/1000g.jpg" alt="1000 g honey jar – ₹699">
-</a>
+        <img src="images/1000g.jpg" alt="1000 g honey jar – ₹699">
+      </a>
       <h2>1000g – ₹699</h2>
     </div>
   </section>
 
+  <!-- Payment QR -->
   <section class="payment">
     <h2>Pay via PhonePe</h2>
     <img src="images/upi-qr.jpg" alt="PhonePe QR">
     <p>UPI ID: <strong>Vitla.samrat@ybl</strong></p>
   </section>
 
-  <section class="contact">
+  <!-- Contact -->
+  <section class="contact" id="contact">
     <h2>Contact & Order</h2>
     <p>📞 9000582083 • 9502108035 • 8686484908</p>
     <p>📧 mynaka.info@gmail.com</p>
     <p>📸 Instagram: <a href="https://instagram.com/honey.natural.organic" target="_blank">@honey.natural.organic</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; Mynaka Honey 2025</p>
   </footer>
-  <a
-  href="https://wa.me/919000582083"
-  class="whatsapp_float"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <i class="fa fa-whatsapp whatsapp-icon"></i>
-</a>
-  <a
-  href="https://wa.me/919000582083?text=Hello%20Mynaka,%20I’d%20like%20to%20order%20Honey%3A%0A- 1000g %E2%82%B9699%0A- 500g %E2%82%B9399%0A- 250g %E2%82%B9199"
-  class="cart-icon"
-  title="Place Order on WhatsApp"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <i class="fa fa-shopping-cart"></i>
-</a>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/919000582083" class="whatsapp_float" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-whatsapp whatsapp-icon"></i>
+  </a>
+
+  <a href="https://wa.me/919000582083?text=Hello%20Mynaka,%20I’d%20like%20to%20order%20Honey%3A%0A- 1000g %E2%82%B9699%0A- 500g %E2%82%B9399%0A- 250g %E2%82%B9199" class="cart-icon" title="Place Order on WhatsApp" target="_blank" rel="noopener noreferrer">
+    <i class="fa fa-shopping-cart"></i>
+  </a>
+
 </body>
 </html>
