@@ -8,9 +8,12 @@ body {
   color: #333;
 }
 .hero {
-  background: #f3e5ab;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/024/977/207/large_2x/honeybee-collecting-pollen-on-a-yellow-flower-close-up-photo.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 120px 20px;
+  color: white;
   text-align: center;
-  padding: 40px 20px;
 }
 .products {
   display: flex;
